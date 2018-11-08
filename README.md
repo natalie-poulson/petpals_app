@@ -99,14 +99,14 @@ To run an instance of Pet Pals on your local machine, clone the repository, then
 
 ### First Iteration (https://github.com/Cyrusluke925/petpals_app):
 
-### Created by
+#### Created by
 * [Natalie Poulson](https://github.com/natalie-poulson)
 * [Andrea Piazza](https://github.com/aza024)
 * [Luke Engle](https://github.com/Cyrusluke925)
 
 ### Refactored Version (this repo):
 
-### By
+#### By
 * [Natalie Poulson](https://github.com/natalie-poulson)
 
 ### Acknowledgments
