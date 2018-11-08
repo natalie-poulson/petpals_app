@@ -6,13 +6,21 @@ PetPals is a social media oriented, full-stack web application that connects pet
 ## Getting Started
 To run an instance of Pet Pals on your local machine, clone the repository, then run:
 
-* Install requirements:
-  * `pip3 install -r requirements.txt`
+1. Install requirements:
 
-* Make migrations:
-  * `python3 manage.py makemigrations`
-  * `python3 manage.py migrate`
-  * `python3 manage.py runserver`
+   `pip3 install -r requirements.txt`
+
+
+2. Make migrations:
+
+   `python3 manage.py makemigrations`
+  
+   `python3 manage.py migrate`
+  
+   `python3 manage.py runserver`
+  
+
+3. Visit http://localhost:8000/
 
 
 ## Built With
