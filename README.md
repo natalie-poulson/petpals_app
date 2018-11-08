@@ -1,7 +1,7 @@
 # PetPals App
 
 ## Scope:
-PetPals is a social media oriented, full-stack web application that connects pet owners by means of sharing images of their pets. Using Django, Python, Javascript, jQuery, HTML, and CSS, our goal is to create an application that allows users to sign-up, create a profile for their pet, post pictures of their pets, and interact with other users through likes and comments. Users will be able to add friends and explore random photos of pets.
+PetPals is a social media oriented, full-stack web application for pets. Our goal is to create an application that allows users to sign-up, create a profile for their pet, post pictures of their pets, and interact with other users.
 
 ## Getting Started
 To run an instance of Pet Pals on your local machine, clone the repository, then run:
@@ -41,6 +41,7 @@ To run an instance of Pet Pals on your local machine, clone the repository, then
 * Upload custom pictures of your pets
 * Comment on and 'like' pet photos of other users who you follow
 * See which other users have liked your photos
+* Feed page features posts by user and their follwers
 * Explore page allows users to see randomly selected photos
 
 
@@ -96,13 +97,17 @@ To run an instance of Pet Pals on your local machine, clone the repository, then
 ### Wireframes
 [Dropbox link to wireframes](https://www.dropbox.com/s/24iflm7dn3n6ups/PetPals.pdf?dl=0)
 
-### Authors
+### First Iteration (https://github.com/Cyrusluke925/petpals_app):
+
+### Created by
+* [Natalie Poulson](https://github.com/natalie-poulson)
 * [Andrea Piazza](https://github.com/aza024)
 * [Luke Engle](https://github.com/Cyrusluke925)
-* [Natalie Poulson](https://github.com/natalie-poulson)
 
-### Herkou Link
-[Pet Pals on Heroku](https://petpalsproject.herokuapp.com/)
+### Refactored Version (this repo):
+
+### By
+* [Natalie Poulson](https://github.com/natalie-poulson)
 
 ### Acknowledgments
 Special thanks to our instructors, Justin Castilla and Dalton Hart for assisting us with this project. 
