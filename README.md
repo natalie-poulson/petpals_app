@@ -6,11 +6,14 @@ PetPals is a social media oriented, full-stack web application that connects pet
 ## Getting Started
 To run an instance of Pet Pals on your local machine, clone the repository, then run:
 
-`python3 manage.py makemigrations`
+* Install requirements:
+  * `pip3 install -r requirements.txt`
 
-`python3 manage.py migrate`
+* Make migrations:
+  * `python3 manage.py makemigrations`
+  * `python3 manage.py migrate`
+  * `python3 manage.py runserver`
 
-`python3 manage.py runserver`
 
 ## Built With
 **Django/Python** - Web framework used to provide structure to web apps, enabling creation of dynamic, safe websites with managed data storage
