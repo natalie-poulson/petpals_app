@@ -1,6 +1,7 @@
 {% extends 'petpals_app/base.html' %}
 
-{% block profile_view %}
+{% block content %}
+
 <div class ="profile_wrapper">
     <div class="profile_info_container">
         <div class ="username">
@@ -33,13 +34,14 @@
             <h1> Posts by {{user.username}} </h1>
         </div>
         <div class="profile_posts">
-        {% for post in posts %}
-            <div class="profile_post_box">
-                <img src="{{ post.image.url }}" alt="">
-                <span class='post_overlay'> "{{post.caption}}" </span>
-            </div>
-        {% endfor %}
+            {% for post in posts %}
+                <div class="profile_post_box">
+                    <img src="{{ post.image.url }}" alt="">
+                    <span class='post_overlay'> "{{post.caption}}" </span>
+                </div>
+            {% endfor %}
         </div> 
     </div>
 </div> 
+
 {% endblock %}

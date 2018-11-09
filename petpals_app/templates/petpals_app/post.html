@@ -1,20 +1,17 @@
 {% extends "petpals_app/base.html" %}
 
-
 {% block content %}
 
 <div class = "postPicContainer">
     <div class="postPic"></div>
     <div class = "postContainer">
-            <h1 class="postHdrNew">New Post </h1>
-            <form class = "postNewForm" method='POST' enctype="multipart/form-data">
-                {% csrf_token %}
-                {{ form.as_p}}
-                <button type='submit'>Submit</button>
-            </form>
+        <h1 class="postHdrNew">New Post </h1>
+        <form class = "postNewForm" method='POST' enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p}}
+            <button type='submit'>Submit</button>
+        </form>
     </div>
 </div>
-
-
 
 {% endblock %}

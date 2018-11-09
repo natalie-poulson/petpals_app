@@ -1,55 +1,52 @@
 {% extends 'petpals_app/base.html' %}
 
 {% block content %}
+
 <div class='thePosts'>
     {% for post in posts %}
     <hr>
     <ul class='singlePost'>
-        <article class='post'>
+        <div class='post'>
             <li class="singlePost">
                 <section class='userInformation'>
-                <img class="user_profile_picture" src="{{post.user.profile.profile_picture.url }}" width="auto" height="40px">
-                <h4><a href={% url 'other_profile' pk=post.user.id %} >{{post.user.username}}</a></h4>
+                    <img class="user_profile_picture" src="{{post.user.profile.profile_picture.url }}" width="auto" height="40px">
+                    <h4><a href={% url 'other_profile' pk=post.user.id %} >{{post.user.username}}</a></h4>
                 </section>
                 <img src="{{post.image.url}}" class='postImage'>
-                <article class = 'captionAndLike'>
-
+                <div class = 'captionAndLike'>
                     <form class="likeform" method="POST" enctype="multipart/form-data" novalidate>
-                    {% csrf_token %}
-                    <input type='hidden' class='new_post' name="post" value={{post.id}}>
-                    <input class='user' type='hidden' name='user' value={{request.user.id}}>
-                    <p>Likes: {{post.likes}} </p>
-                    <input type='hidden' class='like_counter' value={{post.likes}}>
-                    <button class='postLike' value={{post.id}} type='submit' style='border: none'><i class="far fa-heart"></i></button>
+                        {% csrf_token %}
+                        <input type='hidden' class='new_post' name="post" value={{post.id}}>
+                        <input class='user' type='hidden' name='user' value={{request.user.id}}>
+                        <input type='hidden' class='like_counter' value={{post.likes}}>
+                        <p>Likes: {{post.likes}} </p>
+                        <button class='postLike' value={{post.id}} type='submit' style='border: none'><i class="far fa-heart"></i></button>
                     </form>
                     {{post.caption}}
-
-                    <article class="commentsAndLikes">
+                    <div class="commentsAndLikes">
                         <form id='commentForm' method='POST' enctype="multipart/form-data" type="submit">
                             {% csrf_token %}
                             <input type='text' id="commentBox" name='content' placeholder="Add Comment">
                             <input type='hidden' name='post_id' required id='id_post_id' value={{post.id}} />
-                            </form>
-                            <div class="commentsContainer">
+                        </form>
+                        <div class="commentsContainer">
                             {% for comment in post.comments.all %}
-                        
                                 <ul class='commentList'>
                                     <li class='comment'>
-                                        <article class='theComment'>
-                                            <p class='commentUser' data-id='{{comment.user}}'><a href={% url 'other_profile' pk=comment.user.id %}>{{ comment.user }}</a></p><p class='commentContent' data-id='{{comment.post.id}}' > {{ comment.content }}</p>
-                                        </article>
+                                        <div class='theComment'>
+                                            <p class='commentUser' data-id='{{comment.user}}'><a href={% url 'other_profile' pk=comment.user.id %}>{{ comment.user }}</a></p>
+                                            <p class='commentContent' data-id='{{comment.post.id}}' > {{ comment.content }}</p>
+                                        </div>
                                     </li>
                                 </ul>
-                                {% endfor %}    
-                            </div>
-                    </article>
-
-                </article>
+                            {% endfor %}    
+                        </div>
+                    </div>
+                </div>
             </li>
-        </article>
-        
-        
+        </div>
     </ul>
     {% endfor %}
 </div>
+
 {% endblock %}
