@@ -69,10 +69,15 @@ To run an instance of Pet Pals on your local machine, clone the repository, then
     * When the user clicks on an the icon of their profile picture in the nav bar, a logout field will dropdown so user can logout and they will be brought back to the homepage
   
 ## Screenshots
+
 <img src="./screenshots/2.png">
+
 <img src="./screenshots/3.png">
+
 <img src="./screenshots/4.png">
+
 <img src="./screenshots/5.png">
+
 
 ### Development Improvment Opportunites
 * Add feature to edit/delete comments/posts
