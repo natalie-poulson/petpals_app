@@ -1,5 +1,7 @@
 # PetPals App
 
+<img src="./screenshots/1.png">
+
 ## Scope:
 PetPals is a social media oriented, full-stack web application for pets. Our goal is to create an application that allows users to sign-up, create a profile for their pet, post pictures of their pets, and interact with other users.
 
@@ -66,7 +68,12 @@ To run an instance of Pet Pals on your local machine, clone the repository, then
      * If the user clicks on the heart icon in the nav bar, they will be redirected to the likes page where the user can view other accounts that have liked their posts in the format 
     * When the user clicks on an the icon of their profile picture in the nav bar, a logout field will dropdown so user can logout and they will be brought back to the homepage
   
-            
+## Screenshots
+<img src="./screenshots/2.png">
+<img src="./screenshots/3.png">
+<img src="./screenshots/4.png">
+<img src="./screenshots/5.png">
+
 ### Development Improvment Opportunites
 * Add feature to edit/delete comments/posts
 * Prevent page reload when comment is submitted using .AJAX request
